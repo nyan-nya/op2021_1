@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1"
+    />
+    <title>i2c-VL53L0X</title>
+    <script src="node_modules/@chirimen-raspi/polyfill/polyfill.js"></script>
+    <script src="node_modules/@chirimen/vl53l0x/index.js"></script>
+    <script src="./main.js" defer></script>
+    <style>
+      table,
+      p {
+        color: blue;
+        text-align: center;
+        font-size: 24px;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .sensor {
+        text-align: center;
+        width: 80px;
+        height: 60px;
+        background-color: greenyellow;
+        border: solid 1px black;
+      }
+      .on {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p></p>
+    <div id="date_minute"></div>
+    <span id="come_time"></span>
+    <span id="now_time"></span>
+    <script src="./main.js" defer></script>
+    <div id="sensor1" class="sensor"></div>
+  </body>
+</html>
